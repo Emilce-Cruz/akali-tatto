@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Google Fonts: Cormorant Garamond -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../style/style.css"> <!-- llama a CSS -->
     <title>Contacto</title>
 </head>
+
 <body>
-    
+
     <header>
         <nav>
-            <img src="../img/logo2.jpg" alt="Logo de Akali Tatto">
+              <img src="../img/akalitattof2.jpg" alt="Logo de Akali Tatto">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./artistas.html">Artistas</a></li>
@@ -22,20 +29,58 @@
 
     </header>
 
-<main>
-<article>
+   <main>
+    <h1>Contacto - Akali Tattoo</h1>
+    <!-- Sección del Formulario -->
     <section>
-        <h1>Formulario de contacto</h1>
-        <h2>Proximamente.</h2>
+        <h2>Cotizá tu idea</h2>
+        <form action="#" method="POST">
+            <div>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="estilo">Estilo deseado:</label>
+                <select id="estilo" name="estilo">
+                    <option value="blackwork">Blackwork</option>
+                    <option value="tradicional">Tradicional</option>
+                    <option value="fineline">Fine Line</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div>
+                <label for="mensaje">Describí tu idea (zona del cuerpo, tamaño, etc.):</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar consulta</button>
+        </form>
     </section>
-</article>
-
-
+    <!-- Sección de Ubicación y Datos -->
+    <section>
+        <h2>Encontranos en el estudio</h2>
+        <address>
+            <p>Dirección: C. Bartolomé Mitre 892, C1036 Cdad. Autónoma de Buenos Aires</p>
+            <p>Teléfono: <a href="tel:+541145768733">+54 11 4576-8733</a></p>
+            <p>Horario: Lunes a Viernes de 09:00 a 18:00 hs</p>
+        </address>
+    </section>
 </main>
 
-     <footer>
-        <p>Todos los derechos reservados</p>
-    </footer>
+<footer>
+    <p>&copy; 2026 Akali Tatto. Todos los derechos reservados.</p>
+    <nav aria-label="Redes sociales">
+        <ul>
+            <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+    </nav>
+</footer>
 
 </body>
+
 </html>

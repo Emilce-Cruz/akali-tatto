@@ -1,9 +1,108 @@
-
-body{
-    background-color: pink;
-    color: blue;
+/* 1. Reset básico y Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
-h1 {
-    color: blueviolet;
+/* 2. Estilos Generales y Colores Base */
+body {
+    background-color: #F2F2F2; /* Oxy White */
+    color: #121212;            /* Akali Black */
+    font-family: sans-serif;
+    padding: 10px 20px;
+}
+/* Tipografía y jerarquía de títulos */
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #121212;            /* Akali Black */
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+/* Textos secundarios o subtítulos */
+p {
+    line-height: 1.6;
+}
+/* Control general de imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* 3. Encabezado y Navegación */
+header {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #C4C4C4; /* Steel Grey para separador */
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav img {
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+}
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+header nav ul li,
+footer nav ul li {
+    list-style-type: none;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #121212; /* Akali Black */
+    font-weight: bold;
+}
+/* 4. Estructura Principal y Botones de Acción */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+/* Botón de Llamada a la Acción (CTA) */
+section a {
+    display: inline-block;
+    background-color: #FF6F00; /* Incendiary Orange */
+    color: #F2F2F2;            /* Oxy White */
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: fit-content;
+}
+/* Foto principal de la sección */
+figure img {
+    max-width: 450px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid #C4C4C4; /* Steel Grey */
+}
+/* 5. Pie de página */
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #C4C4C4; /* Steel Grey */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #78909C;                /* Graphite Slate */
+}
+footer nav ul {
+    display: flex;
+    gap: 15px;
+}
+footer nav ul li a {
+    text-decoration: none;
+    color: #78909C;                /* Graphite Slate */
 }
