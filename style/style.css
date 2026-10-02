@@ -4,19 +4,19 @@
     margin: 0;
     padding: 0;
 }
-/* 2. Estilos Generales y Colores Base */
 body {
-    background-color: #F2F2F2; /* Oxy White */
-    color: #121212;            /* Akali Black */
-    font-family: sans-serif;
+    background-color: #F2F2F2;
+    color: #121212;
+    font-family: 'Cormorant Garamond', serif; /* Se aplica a toda la web */
+    font-weight: 400;                         /* Grosor normal para párrafos */
+    font-size: 1.1rem;
     padding: 10px 20px;
 }
-/* Tipografía y jerarquía de títulos */
+/* 2. Los títulos heredan la fuente, solo aumentamos el grosor */
 h1, h2, h3 {
-    font-family: 'Cormorant Garamond', serif;
-    color: #121212;            /* Akali Black */
+    font-weight: 700; /* Negrita */
+    color: #121212;
     margin-bottom: 10px;
-    font-weight: 700;
     letter-spacing: 0.5px;
 }
 /* Textos secundarios o subtítulos */
@@ -74,7 +74,7 @@ section {
 section a {
     display: inline-block;
     background-color: #FF6F00; /* Incendiary Orange */
-    color: #F2F2F2;            /* Oxy White */
+    color: #121212;            /* Oxy White */
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 5px;
@@ -96,7 +96,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #78909C;                /* Graphite Slate */
+    color: #121212;                /* Graphite Slate */
 }
 footer nav ul {
     display: flex;
@@ -104,5 +104,5 @@ footer nav ul {
 }
 footer nav ul li a {
     text-decoration: none;
-    color: #78909C;                /* Graphite Slate */
+    color: #121212;                /* Graphite Slate */
 }
