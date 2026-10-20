@@ -1,5 +1,8 @@
 # Akali Tatto
 Sitio web desarrollado para Akali Tattoo, un estudio de tatuajes profesional. El proyecto forma parte del curso de Desarrollo Web en Coderhouse.
+---
+## 🌐 Sitio web desplegado (GitHub Pages)
+👉 [Visitar Akali Tattoo](https://emilce-cruz.github.io/akali-tatto/)
 
 ---
 ## 🚀 Tecnologías utilizadas
