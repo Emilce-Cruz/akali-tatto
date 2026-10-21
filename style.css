@@ -1,0 +1,328 @@
+body {
+  background-color: #E5E5E5;
+  color: #121212;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: #121212;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 1. Reset */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header .navbar-brand {
+  font-family: "Cormorant Garamond", serif;
+}
+header .navbar-nav .nav-link:hover, header .navbar-nav .nav-link:focus {
+  color: #FF6F00;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 20px;
+}
+main.container {
+  gap: 15px;
+}
+main h1, main h2 {
+  font-family: "Cormorant Garamond", serif;
+  color: #141212;
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+main h1:hover, main h2:hover {
+  color: #FF6F00;
+  text-shadow: 0 2px 8px rgba(255, 111, 0, 0.25);
+  transform: scale(1.02);
+  cursor: default;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 0;
+}
+section .titulo-seccion {
+  font-family: "Cormorant Garamond", serif;
+  color: #141212;
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+section .titulo-seccion:hover {
+  color: #FF6F00;
+  text-shadow: 0 2px 8px rgba(255, 111, 0, 0.25);
+  transform: scale(1.02);
+  cursor: default;
+}
+section address a {
+  display: inline;
+  background-color: transparent;
+  color: #121212;
+  padding: 0;
+  border-radius: 0;
+  font-weight: 600;
+  text-decoration: underline;
+  box-shadow: none;
+  transform: none;
+}
+section address a:hover {
+  background-color: transparent;
+  color: #FF6F00;
+  box-shadow: none;
+  transform: none;
+}
+
+figure img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 1px solid #C4C4C4;
+}
+
+article {
+  padding: 20px;
+  background-color: #EEEEEE;
+  border: 1px solid #BDBDBD;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contacto-caja {
+  background-color: #EEEEEE;
+  border: 1px solid #BDBDBD;
+  border-radius: 8px;
+}
+
+#galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+#galeria h1 {
+  grid-column: 1/-1;
+}
+#galeria figure img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #C4C4C4;
+}
+#galeria article figure {
+  overflow: hidden;
+  border-radius: 8px;
+}
+#galeria article img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+#galeria article:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+.carousel-inner {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #FF6F00;
+  box-shadow: 0 0 0 0.25rem rgba(255, 111, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item img {
+    height: 600px;
+  }
+}
+@media (min-width: 1024px) {
+  #galeria {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel-inner .carousel-item img {
+    height: 750px;
+  }
+}
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 1px solid #C4C4C4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #121212;
+}
+footer nav ul {
+  display: flex;
+  gap: 15px;
+}
+footer nav ul li {
+  list-style-type: none;
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: #121212;
+}
+footer nav ul li a:hover {
+  color: #FF6F00;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #333333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  border-color: #555555;
+}
+.card .card-title {
+  font-family: "Cormorant Garamond", serif;
+}
+.card .card-subtitle {
+  color: #e5e5e5;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.card .card-img-top {
+  height: 280px;
+  object-fit: cover;
+}
+
+section a,
+button[type=submit] {
+  display: inline-block;
+  background-color: #FF6F00;
+  color: #121212;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+section a:hover,
+button[type=submit]:hover {
+  background-color: #E65100;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+section a:focus,
+button[type=submit]:focus {
+  outline: 2px solid #121212;
+  outline-offset: 3px;
+}
+section a:active,
+button[type=submit]:active {
+  transform: translateY(0);
+  background-color: #BF360C;
+}
+
+section address a.btn-telefono,
+section a.btn-telefono,
+a.btn-telefono {
+  display: inline-block;
+  background-color: #121212;
+  color: #FF6F00;
+  border: 1px solid #FF6F00;
+  padding: 6px 14px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: none;
+  transform: none;
+  transition: all 0.3s ease;
+}
+section address a.btn-telefono:hover,
+section a.btn-telefono:hover,
+a.btn-telefono:hover {
+  background-color: #FF6F00;
+  color: #121212;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(255, 111, 0, 0.3);
+}
+
+.btn-subir {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  background-color: #121212;
+  color: #FF6F00;
+  border: 2px solid #FF6F00;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  z-index: 1050;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+.btn-subir:hover, .btn-subir:active {
+  background-color: #FF6F00;
+  color: #121212;
+  transform: translateY(-3px);
+}
+
+/*# sourceMappingURL=style.css.map */
