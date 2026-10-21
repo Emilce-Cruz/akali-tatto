@@ -1,0 +1,4 @@
+// Mixins reutilizables
+@mixin transicion-suave($propiedad: all, $tiempo: 0.3s) {
+  transition: $propiedad $tiempo ease;
+}

@@ -1,0 +1,148 @@
+@use "../utilities/variables" as *;
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 20px;
+  &.container {
+    gap: 15px;
+  }
+  h1, h2 {
+    font-family: $fuente-principal;
+    color: $color-texto-hover;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    &:hover {
+      color: $color-principal;
+      text-shadow: 0 2px 8px rgba(255, 111, 0, 0.25);
+      transform: scale(1.02);
+      cursor: default;
+    }
+  }
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 0;
+  .titulo-seccion {
+    font-family: $fuente-principal;
+    color: $color-texto-hover;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    &:hover {
+      color: $color-principal;
+      text-shadow: 0 2px 8px rgba(255, 111, 0, 0.25);
+      transform: scale(1.02);
+      cursor: default;
+    }
+  }
+  address a {
+    display: inline;
+    background-color: transparent;
+    color: $color-texto;
+    padding: 0;
+    border-radius: 0;
+    font-weight: 600;
+    text-decoration: underline;
+    box-shadow: none;
+    transform: none;
+    &:hover {
+      background-color: transparent;
+      color: $color-principal;
+      box-shadow: none;
+      transform: none;
+    }
+  }
+}
+figure img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 1px solid $color-borde;
+}
+article {
+  padding: 20px;
+  background-color: $color-gris-caja;
+  border: 1px solid $color-gris-borde;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contacto-caja {
+  background-color: $color-gris-caja;
+  border: 1px solid $color-gris-borde;
+  border-radius: 8px;
+}
+// Galería con Grid
+#galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  h1 {
+    grid-column: 1 / -1;
+  }
+  figure img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid $color-borde;
+  }
+  article {
+    figure {
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    img {
+      transition: transform 0.4s ease, filter 0.4s ease;
+    }
+    &:hover img {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+  }
+}
+// Carrusel
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+  &-inner {
+    border-radius: 12px;
+    overflow: hidden;
+    .carousel-item img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+  }
+}
+// Formularios Bootstrap
+.form-control:focus,
+.form-select:focus {
+  border-color: $color-principal;
+  box-shadow: 0 0 0 0.25rem rgba(255, 111, 0, 0.25);
+}
+// Media Queries de layout
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item img {
+    height: 600px;
+  }
+}
+@media (min-width: 1024px) {
+  #galeria {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel-inner .carousel-item img {
+    height: 750px;
+  }
+}

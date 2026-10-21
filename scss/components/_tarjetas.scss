@@ -1,0 +1,23 @@
+@use "../utilities/variables" as *;
+.card {
+  background-color: $color-card-fondo;
+  border: 1px solid $color-card-borde;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    border-color: $color-card-borde-hover;
+  }
+  .card-title {
+    font-family: $fuente-principal;
+  }
+  .card-subtitle {
+    color: $color-card-texto;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+  .card-img-top {
+    height: 280px;
+    object-fit: cover;
+  }
+}
