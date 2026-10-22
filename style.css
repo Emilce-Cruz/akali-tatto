@@ -224,7 +224,7 @@ footer nav ul li a:hover {
 .card {
   background-color: #1a1a1a;
   border: 1px solid #333333;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 .card:hover {
   transform: translateY(-5px);
@@ -244,11 +244,19 @@ footer nav ul li a:hover {
   object-fit: cover;
 }
 
-section a,
+@keyframes pulso-flotante {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+section address a.btn-telefono,
+section a.btn-telefono,
+a.btn-telefono, section a,
 button[type=submit] {
   display: inline-block;
-  background-color: #FF6F00;
-  color: #121212;
   padding: 12px 24px;
   text-decoration: none;
   border-radius: 5px;
@@ -257,6 +265,12 @@ button[type=submit] {
   cursor: pointer;
   width: fit-content;
   transition: all 0.3s ease;
+}
+
+section a,
+button[type=submit] {
+  background-color: #FF6F00;
+  color: #121212;
 }
 section a:hover,
 button[type=submit]:hover {
@@ -278,18 +292,14 @@ button[type=submit]:active {
 section address a.btn-telefono,
 section a.btn-telefono,
 a.btn-telefono {
-  display: inline-block;
+  padding: 6px 14px;
+  font-weight: 600;
+  font-size: 0.95rem;
   background-color: #121212;
   color: #FF6F00;
   border: 1px solid #FF6F00;
-  padding: 6px 14px;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  text-decoration: none;
   box-shadow: none;
   transform: none;
-  transition: all 0.3s ease;
 }
 section address a.btn-telefono:hover,
 section a.btn-telefono:hover,
@@ -310,6 +320,7 @@ a.btn-telefono:hover {
   color: #FF6F00;
   border: 2px solid #FF6F00;
   border-radius: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.4rem;
@@ -317,12 +328,13 @@ a.btn-telefono:hover {
   text-decoration: none;
   z-index: 1050;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  animation: pulso-flotante 2.5s infinite ease-in-out;
+  transition: all 0.2s ease;
 }
 .btn-subir:hover, .btn-subir:active {
   background-color: #FF6F00;
   color: #121212;
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */
