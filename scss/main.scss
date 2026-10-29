@@ -3,12 +3,12 @@
 @use "utilities/mixins";
 @use "utilities/variables";
 // 2. Base (Reset y estilos generales)
-@use "base/generales";
-@use "base/reseteo";
+@use "base/tipografia";
+@use "base/base";
 // 3. Layout (Estructura de la página)
 @use "layout/header";
-@use "layout/main";
+@use "layout/contenedor";
 @use "layout/footer";
 // 4. Components (Piezas reutilizables)
-@use "components/tarjetas";
+@use "components/cards";
 @use "components/buttons";

@@ -1,4 +1,11 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+// Placeholder para unificar estilos de cajas repetidas (DRY)
+%caja-gris {
+  background-color: $color-gris-caja;
+  border: 1px solid $color-gris-borde;
+  border-radius: 8px;
+}
 main {
   display: flex;
   flex-direction: column;
@@ -10,7 +17,7 @@ main {
   h1, h2 {
     font-family: $fuente-principal;
     color: $color-texto-hover;
-    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+    @include transicion-suave;
     display: inline-block;
     &:hover {
       color: $color-principal;
@@ -28,7 +35,7 @@ section {
   .titulo-seccion {
     font-family: $fuente-principal;
     color: $color-texto-hover;
-    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+    @include transicion-suave;
     display: inline-block;
     &:hover {
       color: $color-principal;
@@ -65,18 +72,14 @@ figure img {
   border: 1px solid $color-borde;
 }
 article {
+  @extend %caja-gris;
   padding: 20px;
-  background-color: $color-gris-caja;
-  border: 1px solid $color-gris-borde;
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 .contacto-caja {
-  background-color: $color-gris-caja;
-  border: 1px solid $color-gris-borde;
-  border-radius: 8px;
+  @extend %caja-gris;
 }
 // Galería con Grid
 #galeria {
