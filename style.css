@@ -45,7 +45,7 @@ header .navbar-brand {
   font-family: "Cormorant Garamond", serif;
 }
 header .navbar-nav .nav-link:hover, header .navbar-nav .nav-link:focus {
-  color: #FF6F00;
+  color: #E65100;
 }
 
 main {
@@ -64,7 +64,7 @@ main h1, main h2 {
   display: inline-block;
 }
 main h1:hover, main h2:hover {
-  color: #FF6F00;
+  color: #E65100;
   text-shadow: 0 2px 8px rgba(255, 111, 0, 0.25);
   transform: scale(1.02);
   cursor: default;
@@ -83,7 +83,7 @@ section .titulo-seccion {
   display: inline-block;
 }
 section .titulo-seccion:hover {
-  color: #FF6F00;
+  color: #E65100;
   text-shadow: 0 2px 8px rgba(255, 111, 0, 0.25);
   transform: scale(1.02);
   cursor: default;
@@ -101,7 +101,7 @@ section address a {
 }
 section address a:hover {
   background-color: transparent;
-  color: #FF6F00;
+  color: #E65100;
   box-shadow: none;
   transform: none;
 }
@@ -218,7 +218,7 @@ footer nav ul li a {
   color: #121212;
 }
 footer nav ul li a:hover {
-  color: #FF6F00;
+  color: #E65100;
 }
 
 .card {
